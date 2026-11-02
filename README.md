@@ -12,7 +12,7 @@ Seobify Spider, sitenizi bilgisayarınızda tarayıp teknik SEO sorunlarını bu
 - **Yapay zeka görünürlüğü (GEO):** llms.txt kontrolü, yapay zeka botlarının erişim denetimi, alıntılanabilirlik skoru.
 - **İçerik izi:** görünmez karakterler, yapıştırma kalıntıları, tekdüze yazım sinyalleri; isterseniz kendi yapay zeka anahtarınızla yeniden yazım.
 - **Raporlar ve entegrasyonlar:** HTML, CSV ve XLSX raporları; Search Console ve GA4 birleştirmeleri; zamanlanmış tarama.
-- **Claude ve diğer yapay zeka araçları:** yerleşik MCP sunucusuyla tarama, bulguları alma ve düzeltmeyi doğrulama.
+- **Claude ile:** [Seobify Hub](https://github.com/Seobify-Agency/seobify-hub) araçları (Log, Migrate) Spider taramalarını MCP üzerinden okur; Claude bu verileri log ve site taşıma çalışmalarında kullanabilir. Spider'ın kendi MCP sunucusu kurulum paketinde henüz yok.
 
 **İndirme:** [Sürümler sayfasından](https://github.com/Seobify-Agency/seobify-spider-releases/releases) en yeni `Seobify.Spider_<sürüm>_x64-setup.exe` dosyasını indirip çalıştırın (Windows 10/11, 64 bit). Python ya da başka bir şey kurmanız gerekmez. Kurulu uygulama yeni sürümleri kendisi bildirir.
 
@@ -40,7 +40,7 @@ Seobify Spider is a free desktop app that crawls your site on your own computer 
 - **AI search visibility (GEO):** llms.txt checks, AI crawler access audit, citability score.
 - **Content trace:** invisible characters, paste artifacts and uniform-writing signals, with an optional AI rewrite using your own API key.
 - **Reports and integrations:** HTML, CSV and XLSX reports, Search Console and GA4 joins, scheduled crawls.
-- **Claude and other AI tools:** a built-in MCP server lets an agent crawl, take the top issues and verify fixes.
+- **With Claude:** the [Seobify Hub](https://github.com/Seobify-Agency/seobify-hub) tools (Log, Migrate) read Spider crawls over MCP, so Claude can use them in log and site-migration work. Spider's own MCP server is not in the installer yet.
 
 **Download:** get the newest `Seobify.Spider_<version>_x64-setup.exe` from the [releases page](https://github.com/Seobify-Agency/seobify-spider-releases/releases) and run it (Windows 10/11, 64-bit). Nothing else to install. The app tells you when a new version is out.
 
