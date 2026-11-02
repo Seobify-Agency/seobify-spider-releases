@@ -14,7 +14,7 @@ Seobify Spider, sitenizi bilgisayarınızda tarayıp teknik SEO sorunlarını bu
 - **Raporlar ve entegrasyonlar:** HTML, CSV ve XLSX raporları; Search Console ve GA4 birleştirmeleri; zamanlanmış tarama.
 - **Claude ve diğer yapay zeka araçları:** yerleşik MCP sunucusuyla tarama, bulguları alma ve düzeltmeyi doğrulama.
 
-**İndirme:** [Sürümler sayfasından](https://github.com/seobify/seobify-spider-releases/releases) en yeni `Seobify.Spider_<sürüm>_x64-setup.exe` dosyasını indirip çalıştırın (Windows 10/11, 64 bit). Python ya da başka bir şey kurmanız gerekmez. Kurulu uygulama yeni sürümleri kendisi bildirir.
+**İndirme:** [Sürümler sayfasından](https://github.com/Seobify-Agency/seobify-spider-releases/releases) en yeni `Seobify.Spider_<sürüm>_x64-setup.exe` dosyasını indirip çalıştırın (Windows 10/11, 64 bit). Python ya da başka bir şey kurmanız gerekmez. Kurulu uygulama yeni sürümleri kendisi bildirir.
 
 Kurulum dosyası henüz kod imzalı değil. Windows "Windows bilgisayarınızı korudu" uyarısı gösterirse "Ek bilgi" → "Yine de çalıştır" deyin.
 
@@ -26,7 +26,7 @@ Kurulum dosyası henüz kod imzalı değil. Windows "Windows bilgisayarınızı 
 
 **Lisans:** Ücretsizdir; kişisel ve ticari kullanım serbesttir. Kullanım şartları: [TERMS.md](TERMS.md).
 
-**Geri bildirim:** Hata ve önerileri [Issues](https://github.com/seobify/seobify-spider-releases/issues) bölümüne yazabilirsiniz; yanıt süresi taahhüdü yoktur.
+**Geri bildirim:** Hata ve önerileri [Issues](https://github.com/Seobify-Agency/seobify-spider-releases/issues) bölümüne yazabilirsiniz; yanıt süresi taahhüdü yoktur.
 
 Seobify'ın açık kaynak araçları (Log, Migrate, Optic): [Seobify Hub](https://github.com/Seobify-Agency/seobify-hub). Spider'ın bulgularını sitenizde uygulamak için [Seobify ile görüşün](https://seobify.com/iletisim/?utm_source=github&utm_medium=readme&utm_campaign=seobify-spider).
 
@@ -42,7 +42,7 @@ Seobify Spider is a free desktop app that crawls your site on your own computer 
 - **Reports and integrations:** HTML, CSV and XLSX reports, Search Console and GA4 joins, scheduled crawls.
 - **Claude and other AI tools:** a built-in MCP server lets an agent crawl, take the top issues and verify fixes.
 
-**Download:** get the newest `Seobify.Spider_<version>_x64-setup.exe` from the [releases page](https://github.com/seobify/seobify-spider-releases/releases) and run it (Windows 10/11, 64-bit). Nothing else to install. The app tells you when a new version is out.
+**Download:** get the newest `Seobify.Spider_<version>_x64-setup.exe` from the [releases page](https://github.com/Seobify-Agency/seobify-spider-releases/releases) and run it (Windows 10/11, 64-bit). Nothing else to install. The app tells you when a new version is out.
 
 The installer is not code-signed yet. If Windows shows "Windows protected your PC", choose "More info" → "Run anyway".
 
@@ -54,6 +54,6 @@ The installer is not code-signed yet. If Windows shows "Windows protected your P
 
 **License:** free for personal and commercial use. Terms: [TERMS.md](TERMS.md).
 
-**Feedback:** report bugs and ideas in [Issues](https://github.com/seobify/seobify-spider-releases/issues); there is no response-time promise.
+**Feedback:** report bugs and ideas in [Issues](https://github.com/Seobify-Agency/seobify-spider-releases/issues); there is no response-time promise.
 
 Seobify's open-source tools (Log, Migrate, Optic): [Seobify Hub](https://github.com/Seobify-Agency/seobify-hub). Need help applying what Spider finds? [Talk to Seobify](https://seobify.com/en/contact/?utm_source=github&utm_medium=readme&utm_campaign=seobify-spider).
