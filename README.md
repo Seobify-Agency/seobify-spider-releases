@@ -12,11 +12,19 @@ Seobify Spider, sitenizi bilgisayarınızda tarayıp teknik SEO sorunlarını bu
 - **Yapay zeka görünürlüğü (GEO):** llms.txt kontrolü, yapay zeka botlarının erişim denetimi, alıntılanabilirlik skoru.
 - **İçerik izi:** görünmez karakterler, yapıştırma kalıntıları, tekdüze yazım sinyalleri; isterseniz kendi yapay zeka anahtarınızla yeniden yazım.
 - **Raporlar ve entegrasyonlar:** HTML, CSV ve XLSX raporları; Search Console ve GA4 birleştirmeleri; zamanlanmış tarama.
-- **Claude ile:** [Seobify Hub](https://github.com/Seobify-Agency/seobify-hub) araçları (Log, Migrate) Spider taramalarını MCP üzerinden okur; Claude bu verileri log ve site taşıma çalışmalarında kullanabilir. Spider'ın kendi MCP sunucusu kurulum paketinde henüz yok.
+- **Claude ve diğer yapay zeka araçları:** kurulum paketindeki MCP sunucusuyla bir ajan siteyi tarar, ilk işleri alır ve düzeltmeyi canlı sitede doğrular (1.2.3'ten beri; kurulum aşağıda).
 
 **İndirme:** [Sürümler sayfasından](https://github.com/Seobify-Agency/seobify-spider-releases/releases) en yeni `Seobify.Spider_<sürüm>_x64-setup.exe` dosyasını indirip çalıştırın (Windows 10/11, 64 bit). Python ya da başka bir şey kurmanız gerekmez. Kurulu uygulama yeni sürümleri kendisi bildirir.
 
 Kurulum dosyası henüz kod imzalı değil. Windows "Windows bilgisayarınızı korudu" uyarısı gösterirse "Ek bilgi" → "Yine de çalıştır" deyin.
+
+**Claude'a bağlama (MCP):** Spider açıkken çalışır. Claude Code için PowerShell'de:
+
+```powershell
+claude mcp add seobify-spider -- "$env:LOCALAPPDATA\Seobify Spider\seobify-engine.exe" --mcp
+```
+
+Codex, Claude Desktop, Cursor ve Antigravity'de komut olarak aynı `seobify-engine.exe` dosyasını, argüman olarak `--mcp` verin. Spider'ı başka bir klasöre kurduysanız yolu değiştirin. [Seobify Hub](https://github.com/Seobify-Agency/seobify-hub) araçları (Log, Migrate) da Spider taramalarını okur.
 
 **Gizlilik:** Taramalar ve ayarlar bilgisayarınızda kalır; analitik ya da takip kodu yoktur. Uygulama yalnız şuralara bağlanır:
 - taramanızı istediğiniz siteler,
@@ -40,11 +48,19 @@ Seobify Spider is a free desktop app that crawls your site on your own computer 
 - **AI search visibility (GEO):** llms.txt checks, AI crawler access audit, citability score.
 - **Content trace:** invisible characters, paste artifacts and uniform-writing signals, with an optional AI rewrite using your own API key.
 - **Reports and integrations:** HTML, CSV and XLSX reports, Search Console and GA4 joins, scheduled crawls.
-- **With Claude:** the [Seobify Hub](https://github.com/Seobify-Agency/seobify-hub) tools (Log, Migrate) read Spider crawls over MCP, so Claude can use them in log and site-migration work. Spider's own MCP server is not in the installer yet.
+- **Claude and other AI tools:** the MCP server in the installer lets an agent crawl, take the top issues and verify fixes on the live site (since 1.2.3; setup below).
 
 **Download:** get the newest `Seobify.Spider_<version>_x64-setup.exe` from the [releases page](https://github.com/Seobify-Agency/seobify-spider-releases/releases) and run it (Windows 10/11, 64-bit). Nothing else to install. The app tells you when a new version is out.
 
 The installer is not code-signed yet. If Windows shows "Windows protected your PC", choose "More info" → "Run anyway".
+
+**Connect to Claude (MCP):** works while Spider is open. For Claude Code, in PowerShell:
+
+```powershell
+claude mcp add seobify-spider -- "$env:LOCALAPPDATA\Seobify Spider\seobify-engine.exe" --mcp
+```
+
+In Codex, Claude Desktop, Cursor and Antigravity, use the same `seobify-engine.exe` as the command and `--mcp` as the argument. Change the path if you installed Spider somewhere else. The [Seobify Hub](https://github.com/Seobify-Agency/seobify-hub) tools (Log, Migrate) also read Spider crawls.
 
 **Privacy:** crawls and settings stay on your computer; there is no analytics or tracking. The app only connects to:
 - the sites you ask it to crawl,
